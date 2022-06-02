@@ -1,0 +1,14 @@
+/* for tablet */
+@media  screen and (max-width: 884px) {
+    .menu{
+        display: none;
+    }
+    .menu-bar-initial{
+        visibility: visible;
+    }
+}
+@media  screen and (max-width: 490px) {
+    .logo{
+        font-size: 0.7rem;
+    }
+}
