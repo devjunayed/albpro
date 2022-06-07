@@ -329,7 +329,7 @@ div.sb {
   margin-bottom: var(--size-lg);
 }
 .hero-content p {
-  font-size: larger;
+  font-size: var(--size-md);
 }
 .buttons {
   margin-top: var(--size-lg);
@@ -342,7 +342,7 @@ div.sb {
 }
 button {
   z-index: 2;
-  font-size: 16px;
+  font-size: var(--size-sm);
   width: 200px;
   padding: 15px 0;
   text-align: center;
@@ -354,7 +354,9 @@ button {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  font-weight: bold;
 }
+
 button span {
   background: var(--primary-color);
   height: 100%;
@@ -372,6 +374,8 @@ button:hover span {
 button:hover {
   border: none;
 }
+
+
 /* ======================================
                 Services
 ========================================= */
@@ -425,13 +429,16 @@ button:hover {
 .services-content .service {
   background-color: var(--primary-color);
   padding: 5px;
-  width: 30%;
+  width: 330px;
   height: auto;
-  margin: 0px 10px;
+  margin: 5px 10px;
 }
 .service > img {
-  min-height: 255px !important;
+  /* height:  !important; */
   width: 100%;
+}
+.service > img:first-child{
+  height: 300px !important;
 }
 .service .service-heading {
   color: var(--tertiary-color);
@@ -469,20 +476,19 @@ button:hover {
   color: var(--tertiary-color) !important;
 }
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  height: auto;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
   margin: 0px 10px;
 }
 .mix {
-  width: 30%;
+  width: 333px;
   background-color: var(--primary-color);
   color: var(--tertiary-color);
   margin: 5px 10px;
 }
 .mix img {
+  width: 100%;
 }
 .mix .project-name {
   text-align: center;
@@ -497,20 +503,23 @@ button:hover {
 .contact {
   width: 100%;
   display: block;
+  height: auto;
 }
 .form-container {
+  height: 630px;
   display: flex;
   background: url(assets/images/contact-bg.jpg) no-repeat;
   background-size: cover;
 }
 form {
+  position: relative;
   font-size: 20px;
   color: var(--primary-color);
   margin: 0 auto;
 }
 input,
 textarea {
-  width: 100% !important;
+  width: 700px !important;
   height: 40px;
   font-size: 20px;
   outline: none;
@@ -522,7 +531,34 @@ textarea {
 label {
   color: white;
 }
+input[type="submit"]{
 
+  background-color: var(--secondary-color) ;
+  height: 50px;
+  border-radius: 25px;
+  color: white;
+  font-weight: bolder;
+  border: 4px solid var(--primary-color);
+  width: 200px !important;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+
+}
+input[type="submit"]:hover{
+  background-color:var(--primary-color);
+  cursor: pointer;
+}
+
+.copyright{
+
+}
 .copyright,
 .copyright a {
   background-color: black;

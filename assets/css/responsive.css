@@ -12,3 +12,64 @@
         font-size: 0.7rem;
     }
 }
+
+
+/* for form */
+@media  screen and (max-width: 740px) {
+.form-container{
+    height: 430px;
+}
+input[type="submit"]{
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+input,
+textarea {
+  width: 600px !important;
+  height: 40px;
+  font-size: 20px;
+  outline: none;
+  margin-bottom: 20px;
+}
+.hero-content {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media  screen and (max-width: 640px) {
+input,
+textarea {
+  width: 400px !important;
+  height: 40px;
+  font-size: 20px;
+  outline: none;
+  margin-bottom: 20px;
+}
+}
+@media  screen and (max-width: 420px) {
+input,
+textarea {
+  width: 250px !important;
+  height: 40px;
+  font-size: 20px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+/* Button responsive fix */
+button{
+    width: 150px;
+}
+}
+@media  screen and (max-width: 350px) {
+
+button{
+    width: 100px;
+}
+}
